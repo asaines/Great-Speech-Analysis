@@ -1,0 +1,10 @@
+Name,Tuned Hyperparameters,Train_precision,Test_Presicion,Precision difference,Tran_ROC,Test_ROC,Roc diff,duration_minutes
+RandomForestClassifier,"{'clf__max_depth': 6, 'clf__min_samples_leaf': 4, 'clf__min_samples_split': 8, 'encoder': RobustScaler()}",78.35%,76.60%,-1.75%,99.58%,82.43%,-17.15%,32.50614352
+XGBClassifier,"{'clf__colsample_bytree': 0.7, 'clf__gamma': 0.4, 'clf__learning_rate': 0.1, 'clf__max_depth': 3, 'clf__min_child_weight': 3, 'encoder': StandardScaler()}",79.35%,72.34%,-7.01%,99.37%,79.35%,-20.02%,13.15083633
+LogisticRegression,"{'clf__C': 0.1, 'clf__penalty': 'l2', 'clf__solver': 'liblinear', 'encoder': RobustScaler()}",68.18%,78.72%,10.54%,83.65%,78.08%,-5.57%,0.002260583
+SVC,"{'clf__C': 100, 'clf__gamma': 100, 'clf__kernel': 'linear', 'encoder': StandardScaler()}",68.18%,68.09%,-0.09%,85.05%,76.81%,-8.24%,1.902585933
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
