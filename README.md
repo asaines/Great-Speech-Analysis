@@ -40,6 +40,6 @@ From the SHAP plot, we can see that features like sadness, fear, and the proport
 This project is licensed under the MIT License.
 
 # Contact
-For collaboration or inquiries, please reach out to me at asaines.kul@gmail.com.
+For collaboration or inquiries, please reach out to me at https://www.linkedin.com/in/asaines/.
 
 
