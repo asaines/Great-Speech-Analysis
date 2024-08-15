@@ -4,13 +4,22 @@ This project aims to determine a decision rule to identify whether a speech is l
 
 Seventy-seven great speeches were compared with 77 typical ones, randomly selected from American Rhetoric (https://www.americanrhetoric.com/). Four classifier algorithms were trained to distinguish between important and typical speeches, with a random forest classifier chosen for its high ROC and accuracy.
 
-# Dataset
+## Dataset
 
 The dataset includes measures related to both typical and important speeches. These speeches were scraped from the American Rhetoric website and should be placed in the dataset folder to run the code. Creating this dataset may take around three hours, depending on processing capacity. The imagery words used in this analysis are sourced from the MRC Psycholinguistic Database (https://websites.psychology.uwa.edu.au/school/mrcdatabase/uwa_mrc.htm) and should be placed in the resources folder in this repository.
 
-# Project Structure
+## Project Structure
 
 The project includes scripts such as BasicDataset, DataLoader, Speech, SpeechDataset, preprocessors, polarity_graph, sentiments_per_position, radar, and the Speech Analysis notebook. The analysis is conducted using these scripts. DataLoader and SpeechDataset work together to process PDF speeches, with Speech-containing methods for feature computation. The preprocessors include basic and advanced techniques like stop word removal, lemmatization, and punctuation handling.
+
+
+## Model Interpretation
+
+Below is a SHAP value plot from this project's final random forest model. SHAP values help explain the impact of each feature on the model's predictions, allowing us to understand which factors contribute most to determining whether a speech is classified as "great" or "typical."
+
+![image](https://github.com/user-attachments/assets/a561e4ed-7423-47a9-8f75-3f6da4581e01)
+
+From the SHAP plot, we can see that features like sadness, fear, and the proportion of entities in the speech have a significant influence on the model's output.
 
 ## Setup Instructions
 1. **Clone the Repository**:
@@ -26,8 +35,11 @@ The project includes scripts such as BasicDataset, DataLoader, Speech, SpeechDat
    Follow the instructions in the Speech Analysis notebook to perform the speech analysis.
 
 
+
 # License
 This project is licensed under the MIT License.
 
 # Contact
 For collaboration or inquiries, please reach out to me at asaines.kul@gmail.com.
+
+
